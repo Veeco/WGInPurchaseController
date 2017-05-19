@@ -111,7 +111,7 @@ static id _contrller;
     param[@"userID"] = transactions.payment.applicationUsername;
     param[@"transactionID"] = transactions.transactionIdentifier;
     
-    // TODO:防止意外漏单, 把用户ID和交易ID本地化起来, 在下次APP启动时判断存在用户ID和交易ID时重走此方法与服务器交互, 当然了, 在确认成功后finish掉交易时要记得把本地化数据清空.这2上
+    // TODO:为防止意外漏单, 把用户ID和交易ID本地化起来, 在下次APP启动时判断存在用户ID和交易ID时重走此方法与服务器进行交互, 当然了, 在确认成功后finish掉交易时要记得把本地化数据清空.
     
     // TODO:向服务器发送验证请求
     // ......
